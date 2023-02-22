@@ -1,16 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Counter v-bind:start="101" title="Hola" />
-  <!-- También puedo usar :start="15" y así se envía como número -->
+  <Indecision></Indecision>
 </template>
 
 <script>
-import Counter from "./components/Counter.vue";
+import Indecision from "./components/Indecision.vue";
 
 export default {
   name: "App",
   components: {
-    Counter,
+    Indecision,
   },
 };
 </script>
