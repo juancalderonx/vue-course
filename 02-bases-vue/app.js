@@ -28,8 +28,6 @@ const quotes = [
   },
 ];
 
-console.log(quotes);
-
 const app = Vue.createApp({
   data() {
     return {
@@ -39,10 +37,9 @@ const app = Vue.createApp({
   },
 
   methods: {
-    addQuote({ charCode, key }) {
+    addQuote() {
       this.quotes.push({
         quote: this.newQuote,
-        author: "Juancho",
       });
     },
   },
