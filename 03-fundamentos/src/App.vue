@@ -1,17 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <Counter></Counter>
+  <Counter v-bind:start="101" title="Hola" />
+  <!-- También puedo usar :start="15" y así se envía como número -->
 </template>
 
 <script>
-
-import Counter from './components/Counter.vue'
+import Counter from "./components/Counter.vue";
 
 export default {
   name: "App",
   components: {
     Counter,
-  }
+  },
 };
 </script>
 
